@@ -20,7 +20,7 @@ body {
     font-family: 'Raleway';
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
+    padding: 0px 160px;
     line-height: 1;
 }
 ol, ul,li {
@@ -49,7 +49,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 section.menu{
     background-color: var(--color-de-fondo);
-    padding: 32px 152px;
+    padding: 32px 0px;
 
 }
 /* seccion menu, propiedad es flex*/
@@ -62,12 +62,16 @@ section.menu{
 }
 
 .menu__header {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
     
+}
+
+.menu__header.img {
+    size: 30px;
 }
 
 .menu__list {
@@ -98,34 +102,44 @@ section.title{
 
 }
 
-.title {
+.title__div {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: flex-start;
-    flex-wrap: wrap;  
+    align-items: flex-start;  
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 60px;
 }
 
 .title__profile{
-    
+
 }
 
 .title__bio{
     font-weight: bold;
     font-size: 52px;
-    line-height: auto;
+    line-height: 62px;
 }
 
 .title__subsection{
-    font-weight:400;
-    font-size: 22px;
-    line-height: 32px;
+    font-weight:300;
+    font-size: 23px;
+    line-height: 35px;
 }
 
 .title__network{
-    display: inline-flex;
+    display: flex;
     flex-direction:row;
-    justify-content: space-between;
-    gap:40px;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+        
+
 }
 
 
