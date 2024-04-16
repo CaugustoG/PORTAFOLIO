@@ -1,0 +1,23 @@
+.menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+
+}
+
+.menu__header {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    
+}
+
+.menu__list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
