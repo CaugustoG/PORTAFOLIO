@@ -62,6 +62,7 @@ section.menu{
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     gap: 20px;
     
 }
@@ -71,7 +72,7 @@ section.menu{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
 }
 
 .menu__list__item:nth-child(1),
@@ -80,6 +81,10 @@ section.menu{
 .menu__list__item:nth-child(4),
 .menu__list__item:nth-child(5) {
     display:flex;
+}
+
+.menu__list__item:nth-child(6) {
+    font-weight: 600;
 }
 
 /*Sección Title*/
@@ -94,19 +99,17 @@ section.title{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
-  
-    
+    flex-wrap: wrap;  
 }
 
 .title__profile{
-    size: 368px;
+    
 }
 
 .title__bio{
     font-weight: bold;
     font-size: 52px;
-    line-height: 65px;
+    line-height: auto;
 }
 
 .title__subsection{
