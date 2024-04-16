@@ -49,12 +49,79 @@ section.menu{
     padding: 32px 152px;
 
 }
+/* seccion menu, propiedad es flex*/
+.menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+
+}
+
+.menu__header {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    
+}
+
+.menu__list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.menu__list__item:nth-child(1),
+.menu__list__item:nth-child(2),
+.menu__list__item:nth-child(3),
+.menu__list__item:nth-child(4),
+.menu__list__item:nth-child(5) {
+    display:flex;
+}
 
 /*Sección Title*/
 
 section.title{
+    background-color: var(--color-de-fondo);
+    padding: 152px 40px;
 
 }
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  
+    
+}
+
+.title__profile{
+    size: 368px;
+}
+
+.title__bio{
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 65px;
+}
+
+.title__subsection{
+    font-weight:400;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.title__network{
+    display: inline-flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:40px;
+}
+
 
 /*Sección About*/
 
@@ -97,12 +164,21 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 /* Menú */
 section.menu{
     background-color: var(--color-de-fondo);
     padding: 32px 32px;
+}
+
+/*menu oculto en tablet y phone*/
+.menu__list__item:nth-child(1),
+.menu__list__item:nth-child(2),
+.menu__list__item:nth-child(3),
+.menu__list__item:nth-child(4),
+.menu__list__item:nth-child(5) {
+    display: none;
 }
 
 /*title*/
