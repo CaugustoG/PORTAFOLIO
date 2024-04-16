@@ -100,6 +100,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 768px) {
 
 /* Menú */
+section.menu{
+    background-color: var(--color-de-fondo);
+    padding: 32px 32px;
+}
 
 /*title*/
 
