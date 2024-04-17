@@ -20,7 +20,7 @@ body {
     font-family: 'Raleway';
     overflow-x: hidden;
     margin: 0;
-    padding: 0px 160px;
+    /*padding: 0px 160px;*/
     line-height: 1;  
 }
 ol, ul,li {
@@ -235,8 +235,9 @@ section.hobbies{
 
 section.academic{
     background-color: var(--color-de-about);
+    width: 100%;
     margin: 30px 0px;
-    padding: 20px 0px;
+    padding: 0px
 }
 
 .academic__courses{
@@ -245,27 +246,35 @@ section.academic{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    align-items: flex-start;  
 }
 
 .academic__courses__box{
     display: flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .academic__courses__list{
-
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .academic__courses__item__img{
     background-color: var(--color-skills);
     padding: 20px;
-    border-radius: 20px;
-    
+    border-radius: 20px; 
 }
 
-
+.academic__courses__item__title,
+.academic__courses__item__subtitle{
+    padding: 0px;
+    margin: 0px;
+    margin: 0px;
+    line-height: 10px;
+}
 
 /* experiencia*/
 
@@ -298,8 +307,10 @@ body {
     background-color: var(--color-de-fondo) ;
     font-family: 'Raleway';
     overflow-x: hidden;
+    align-content: center;
+    width: 100%;
     margin: 0;
-    padding: 0px 50px;
+    padding: 0px 0px;
     line-height: 1;
 }
 
@@ -392,6 +403,51 @@ section.hobbies{
 }
 
 /*Formación Académica*/
+
+section.academic{
+    background-color: var(--color-de-about);
+    width: 100%;
+    margin: 30px 0px;
+    padding: 0px
+}
+
+.academic__courses{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+     
+}
+
+.academic__courses__box{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.academic__courses__item__img{
+    background-color: var(--color-skills);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    size-adjust: ;
+
+}
+
+.academic__courses__item__title,
+.academic__courses__item__subtitle{
+    padding: 0px;
+    margin: 0px;
+    margin: 0px;
+    line-height: 10px;
+}
 
 /*Experiencia Profesional*/
 
