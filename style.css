@@ -10,6 +10,7 @@ coloque nas sessões indicadas*/
    --color-de-fondo: #F5F5F5;
    --color-de-link: #000;
    --color-de-iconos: #2A7AE4;
+   --color-de-about: #EAF2FD;
 
 
 }
@@ -22,6 +23,7 @@ body {
     margin: 0;
     padding: 0px 160px;
     line-height: 1;
+   
 }
 ol, ul,li {
     list-style: none;
@@ -117,13 +119,14 @@ section.title{
 }
 
 .title__profile{
+    align-items: center;
 
 }
 
 .title__bio{
     font-weight: bold;
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 48px;
+    line-height: 58px;
 }
 
 .title__subsection{
@@ -146,7 +149,21 @@ section.title{
 /*Sección About*/
 
 section.about{
+    background-color: var(--color-de-about);
+    padding: 80px ;
 
+}
+
+.about__title{
+    font-size: 32px;
+
+}
+
+.about__paragraph{
+    font-size: 16px;
+    font-weight: 100;
+    padding-right: 30%;
+    line-height: 26px;
 }
 
 /*Sección Hobbies*/
