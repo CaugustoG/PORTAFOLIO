@@ -11,8 +11,7 @@ coloque nas sessões indicadas*/
    --color-de-link: #000;
    --color-de-iconos: #2A7AE4;
    --color-de-about: #EAF2FD;
-
-
+   --color-skills: #ffffff;
 }
 
 body {
@@ -22,8 +21,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0px 160px;
-    line-height: 1;
-   
+    line-height: 1;  
 }
 ol, ul,li {
     list-style: none;
@@ -60,7 +58,6 @@ section.menu{
     flex-direction: row;
     justify-content: space-around;
     width: auto;
-
 }
 
 .menu__header {
@@ -68,8 +65,7 @@ section.menu{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
-    
+    gap: 20px;  
 }
 
 .menu__header.img {
@@ -141,8 +137,6 @@ section.title{
     justify-content: flex-start;
     align-items: start;
     gap: 20px;
-        
-
 }
 
 
@@ -150,13 +144,11 @@ section.title{
 
 section.about{
     background-color: var(--color-de-about);
-    padding: 80px ;
-
+    padding: 0px ;
 }
 
 .about__title{
     font-size: 32px;
-
 }
 
 .about__paragraph{
@@ -166,17 +158,88 @@ section.about{
     line-height: 26px;
 }
 
+/*Sección skills*/
+
+.skills__title,
+.hobbies__title,
+.academic__title,
+.experience__section__title {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.skills__box{
+    background-color: var(--color-skills);
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 0px;
+    border-radius: 20px;
+}
+
+.skills__img {
+    width: 15px;
+}
+
+.skills__name{
+    font-size: 13px;
+    padding-top: 10px;
+}
+
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+       
+}
+
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.hobbies__box{
+    background-color: var(--color-skills);
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 0px;
+    border-radius: 20px; 
+}
+
+.hobbies__img {
+    width: 15px;
+}
+
+.hobbies__name{
+    font-size: 13px;
+    padding-top: 10px;
 }
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    background-color: var(--color-de-about);
+    margin: 30px 0px;
+    padding: 20px 0px;
 }
+
+
 
 /* experiencia*/
 
@@ -203,6 +266,17 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (max-width: 768px) {
 
+/*Body*/
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo) ;
+    font-family: 'Raleway';
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0px 50px;
+    line-height: 1;
+}
+
 /* Menú */
 section.menu{
     background-color: var(--color-de-fondo);
@@ -221,8 +295,75 @@ section.menu{
 /*title*/
 
 /*Skills*/
+.skills__title,
+.hobbies__title,
+.academic__title,
+.experience__section__title {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0px;  
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.skills__box{
+    background-color: var(--color-skills);
+    width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 0px;
+    border-radius: 20px;
+}
+
+.skills__img {
+    size: 5px;
+}
+
+.skills__name{
+    font-size: 13px;
+    padding-top: 10px;
+}
 
 /*Hobbies*/
+section.hobbies{
+       
+}
+
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.hobbies__box{
+    background-color: var(--color-skills);
+    width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 0px;
+    border-radius: 20px; 
+}
+
+.hobbies__img {
+    width: 15px;
+}
+
+.hobbies__name{
+    font-size: 13px;
+    padding-top: 10px;
+}
 
 /*Formación Académica*/
 
@@ -232,6 +373,16 @@ section.menu{
 
 /*Mobile*/
 @media (min-width: 425px) {
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo) ;
+    font-family: 'Raleway';
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0px 50px;
+    line-height: 1;
+}
 
 /*Menu*/
 
