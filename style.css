@@ -51,6 +51,7 @@ https://en.bem.info/methodology/quick-start/*/
 section.menu{
     background-color: var(--color-de-fondo);
     padding: 32px 0px;
+    width: 1440px;
 
 }
 /* seccion menu, propiedad es flex*/
@@ -58,7 +59,6 @@ section.menu{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    width: auto;
 }
 
 .menu__header {
@@ -97,7 +97,11 @@ section.menu{
 
 section.title{
     background-color: var(--color-de-fondo);
-    padding: 152px 40px;
+    width: 1440px;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+
 
 }
 
@@ -135,8 +139,8 @@ section.title{
 .title__network{
     display: flex;
     flex-direction:row;
-    justify-content: flex-start;
-    align-items: start;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -145,6 +149,7 @@ section.title{
 
 section.about{
     background-color: var(--color-de-about);
+    width: 1440px;
     padding: 60px;
 }
 
@@ -160,6 +165,12 @@ section.about{
 }
 
 /*Sección skills*/
+
+section.skills{
+    background-color: var(--color-de-fondo);
+    width: 1440px;
+    padding: 60px;
+}
 
 .skills__title,
 .hobbies__title,
@@ -203,7 +214,9 @@ section.about{
 /*Sección Hobbies*/
 
 section.hobbies{
-       
+    background-color: var(--color-de-fondo);
+    width: 1440px;
+    padding: 60px;
 }
 
 .hobbies__line{
@@ -212,7 +225,7 @@ section.hobbies{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 60px;
-    gap: 25px;
+    gap: 20px;
 }
 
 .hobbies__box{
@@ -239,7 +252,8 @@ section.hobbies{
 
 section.academic{
     background-color: var(--color-de-about);
-    padding: 30px 0px;
+    width:1440px;
+    padding: 50px 60px;
 }
 
 .academic__courses{
@@ -253,7 +267,7 @@ section.academic{
 .academic__courses__box{
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .academic__courses__list{
@@ -264,7 +278,6 @@ section.academic{
 }
 .academic__courses__item__img{
     background-color: var(--color-skills);
-    margin: 0px;
     padding: 20px;
     border-radius: 20px; 
 }
@@ -279,7 +292,9 @@ section.academic{
 /* experiencia*/
 
 section.experience{
-   
+    background-color: var(--color-de-fondo);
+    width: 1440px;
+    padding: 50px 60px;
 }
 
 .experiencie__box{
@@ -341,6 +356,9 @@ section.experience{
 /*Contacto*/
 
 section.formcontato{
+    background-color: var(--color-de-fondo);
+    width: 1440px;
+    padding: 60px;
 
 }
 
