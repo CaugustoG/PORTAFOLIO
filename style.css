@@ -7,11 +7,13 @@ coloque nas sessões indicadas*/
 :root{
     /* Insertar la variable de otros colores inspeccionando el ejemplo de figma */
     /*Haz un esfuerzo por trabajar con variables, es un valioso consejo profesional*/
-   --color-de-fondo: #F5F5F5;
+   /*colores*/
+    --color-de-fondo: #F5F5F5;
    --color-de-link: #000;
    --color-de-iconos: #2A7AE4;
    --color-de-about: #EAF2FD;
    --color-skills: #ffffff;
+   --colot-button: #22569b;
 }
 
 body {
@@ -162,7 +164,8 @@ section.about{
 .skills__title,
 .hobbies__title,
 .academic__title,
-.experience__section__title {
+.experience__section__title,
+.formcontato__title {
     font-size: 30px;
     text-align: center;
     padding: 20px 0px;
@@ -276,7 +279,63 @@ section.academic{
 /* experiencia*/
 
 section.experience{
+   
+}
 
+.experiencie__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    padding: 20px 0px 20px 0px;
+}
+.experience__img{
+    width:60%;
+}
+
+.experience__img{
+    margin: 30px 0px;
+}
+
+.experience__info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.experience__title{
+    font-weight: 800;
+    font-size: 50px;
+}
+.experience__text{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.experiencia__botao--repo,
+.experience__botao--demo {
+    background-color: var(--color-de-iconos);
+    padding: 10px 20px;
+    margin-right: 30px;
+    border:none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.experiencia__botao--repo:hover,
+.experience__botao--demo:hover {
+    background-color: var(--color-skills);
+    padding: 10px 20px;
+    margin-right: 30px;
+    border: #22569b;
+    border-radius: 20px;
+    color: var(--colot-button);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /*Contacto*/
@@ -516,7 +575,7 @@ section.academic{
 }
 
 /*Mobile*/
-/*@media (min-width: 425px) {
+@media (max-width: 425px) {
 
 body {
     box-sizing: border-box;
@@ -546,4 +605,4 @@ body {
 
 /*Footer*/
 
-}*/
+}
