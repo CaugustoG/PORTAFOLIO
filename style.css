@@ -161,9 +161,10 @@ section.about{
     line-height: 26px;
 }
 
-/*Sección skills*/
+/*Sección skills y Hobbies*/
 
-section.skills{
+section.skills,
+section.hobbies{
     background-color: var(--color-de-fondo);
     padding: 60px;
 }
@@ -177,7 +178,8 @@ section.skills{
     padding: 20px 0px;
 }
 
-.skills__line{
+.skills__line,
+.hobbies__line {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -186,10 +188,11 @@ section.skills{
     gap: 20px;
 }
 
-.skills__box{
+.skills__box,
+.hobbies__box {
     background-color: var(--color-skills);
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -197,49 +200,15 @@ section.skills{
     border-radius: 20px;
 }
 
-.skills__img {
+.skills__img,
+.hobbies__img {
     width: 20px;
 }
 
-.skills__name{
+.skills__name,
+.hobbies__name {
     font-size: 16px;
     padding-top: px;
-}
-
-/*Sección Hobbies*/
-
-section.hobbies{
-    background-color: var(--color-de-fondo);
-    padding: 60px;
-}
-
-.hobbies__line{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 60px;
-    gap: 20px;
-}
-
-.hobbies__box{
-    background-color: var(--color-skills);
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-left: 0px;
-    border-radius: 20px; 
-}
-
-.hobbies__img {
-    width: 15px;
-}
-
-.hobbies__name{
-    font-size: 13px;
-    padding-top: 10px;
 }
 
 /* Experiencia Académica*/
@@ -421,7 +390,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
 /* Menú */
 section.menu{
@@ -500,13 +469,19 @@ section.about{
 }
 
 .about__paragraph{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
     padding-right: 0%;
-    line-height: 26px;
 }
 
-/*Skills*/
+/*Skills y hobbies*/
+
+section.skills,
+section.hobbies{
+    background-color: var(--color-de-fondo);
+    width: 90%;
+    align-content: center;
+}
 .skills__title,
 .hobbies__title,
 .academic__title,
@@ -516,64 +491,37 @@ section.about{
     padding: 20px 0px;  
 }
 
-.skills__line{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.skills__box{
-    background-color: var(--color-skills);
-    width: 170px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-radius: 20px;
-}
-
-.skills__img {
-    size: 5px;
-}
-
-.skills__name{
-    font-size: 13px;
-    padding-top: 10px;
-}
-
-/*Hobbies*/
-section.hobbies{
-       
-}
-
+.skills__line,
 .hobbies__line{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 25px;
+    justify-content: center;
+    align-content: flex-start;
+    align-self: stretch;
+    gap: 20px;
 }
 
+.skills__box,
 .hobbies__box{
     background-color: var(--color-skills);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     width: 170px;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-left: 0px;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
+.skills__img,
 .hobbies__img {
-    width: 15px;
+    size: 5px;
 }
 
-.hobbies__name{
-    font-size: 13px;
-    padding-top: 10px;
+.skills__name,
+.hobbies__name {
+    font-size: 12px;
+    padding-top: 5px;
 }
 
 /*Formación Académica*/
@@ -611,7 +559,6 @@ section.academic{
     padding: 20px;
     border-radius: 20px;
     display: flex;
-    size-adjust: ;
 
 }
 
@@ -627,18 +574,18 @@ section.academic{
 
 section.experience{
     background-color: var(--color-de-fondo);
-    padding: 50px 60px;
+    padding: 20px 30px;
 }
 
 .experiencie__box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: top;
-    padding: 20px 0px 20px 0px;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
 }
 .experience__img{
-    width:60%;
+    width:90%;
 }
 
 .experience__img{
@@ -648,45 +595,106 @@ section.experience{
 .experience__info-container{
     display:flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     margin-left: 30px;
     margin-top: 30px;
 }
 
 .experience__title{
-    font-weight: 800;
-    font-size: 50px;
+    font-weight: 300;
+    font-size: 10px;
+    align-items: left;
 }
 .experience__text{
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .experiencia__botao--repo,
 .experience__botao--demo {
     background-color: var(--color-de-iconos);
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-right: 30px;
+    padding: 5px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
     border:none;
     border-radius: 20px;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
 }
 
 .experiencia__botao--repo:hover,
 .experience__botao--demo:hover {
     background-color: var(--color-skills);
-    padding: 10px 20px;
-    margin-right: 30px;
+    padding: 5px 20px;
+    margin-right: 10px;
     border: #22569b;
     border-radius: 20px;
     color: var(--colot-button);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 
+/*Contacto*/
+
+section.formcontato{
+    background-color: var(--color-de-about);
+    padding: px 0px;
+}
+
+.formcontato__text{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
+    width: 50%;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+.formcontato__form{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.formcontato__botao {
+    background-color: var(--color-de-iconos);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border:none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formcontato__botao:hover {
+    background-color: var(--color-skills);
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: px;
+    border: #22569b;
+    border-radius: 20px;
+    color: var(--colot-button);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formcontato__input,
+.formcontato__textarea{
+    padding: 10px;
+    margin: 10px 0px;
+    border-color:  #22569b;
+    border-width: 2px;
+    border-radius:20px;
+}
 }
 
 /*Mobile*/
