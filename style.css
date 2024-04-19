@@ -598,7 +598,8 @@ section.experience{
 }
 
 .experience__img{
-    margin: 30px 0px;
+    margin: 0px 0px;
+    border-radius: 20px;
 }
 
 .experience__info-container{
